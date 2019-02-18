@@ -7,16 +7,7 @@ Class {
 { #category : #tests }
 SquizzyTest >> testOneChoiceAmongMany [
 
-	| represent quiz1 |
-	represent :='Where do developers typically write the Pharo syntax?
-
-   ( ) a stamp
-   ( ) an envelop
-   (x) a postcard
-
-[explanation]
-It is common to say that the Pharo syntax fits on a postcard.
-[explanation]'.
+	| quiz1 |
 	quiz1 := SQOne new 
 		question: 'Where do developers typically write the Pharo syntax?';
 		choices: #( 'a stamp' 'an envelop' 'a postcard');
